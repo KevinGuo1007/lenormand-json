@@ -1,60 +1,51 @@
-# Lenormand JSON
+<img align="left" src="cards/01-Rider.png" height="120">
+<h1>Lenormand JSON</h1>
 
-A JSON dataset of the 36 Lenormand cards, inspired by
-[metabismuth/tarot-json](https://github.com/metabismuth/tarot-json).
+A JSON dataset for the 36 Lenormand cards, including public-domain card images.
 
-This repository includes:
+<center>
 
-- `lenormand.json`: card data without image paths
-- `lenormand-images.json`: the same card data with image paths
-- `lenormand-card/`: public-domain card images from *Das Spiel der Hofnung*
+[English](README.md) | [简体中文](README.zh.md)
+
+[![GitHub release](https://img.shields.io/github/v/release/KevinGuo1007/lenormand-json?include_prereleases&sort=semver)](https://github.com/KevinGuo1007/lenormand-json/releases)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+</center>
+
+## The cards
+
+- `lenormand.json`: basic card data
+- `lenormand-images.json`: basic card data with image paths
+- `cards/`: 36 card images
+
+## Quick Start
+
+```js
+const data = require("./lenormand-images.json");
+
+console.log(data.cards[0]);
+```
+
+Example output:
+
+```json
+{
+  "name": "Rider",
+  "number": "1",
+  "playing_card": "9 of Hearts",
+  "suit": "Hearts",
+  "img": "cards/01-Rider.png"
+}
+```
 
 ## Source
 
-The card images are derived from
-[*Das Spiel der Hofnung (The Game of Hope)*](https://commons.wikimedia.org/wiki/File:Das_Spiel_der_Hofnung_(The_Game_of_Hope).png),
-created by Johann Kaspar Hechtel and dated 1799. Wikimedia Commons marks the
-source file as public domain.
+The card images are from Wikimedia Commons:
+[*Das Spiel der Hofnung (The Game of Hope)*](https://commons.wikimedia.org/wiki/File:Das_Spiel_der_Hofnung_(The_Game_of_Hope).png).
 
-## Data Shape
-
-Each card entry follows this structure:
-
-```json
-{
-  "name": "Rider",
-  "number": "1",
-  "name_zh": "骑士",
-  "playing_card": "9 of Hearts",
-  "suit": "Hearts"
-}
-```
-
-`lenormand-images.json` adds an `img` field:
-
-```json
-{
-  "name": "Rider",
-  "number": "1",
-  "name_zh": "骑士",
-  "playing_card": "9 of Hearts",
-  "suit": "Hearts",
-  "img": "lenormand-card/Slice 1.png"
-}
-```
-
-## Usage
-
-```js
-const cards = require("./lenormand.json");
-
-console.log(cards.cards[0]);
-```
+The original work was created by Johann Kaspar Hechtel in 1799. Wikimedia Commons marks the image as public domain.
 
 ## License
 
-The JSON dataset and repository documentation are available under the MIT
-License.
+The JSON data and documentation in this repository are available under the [MIT License](LICENSE).
 
-The original card artwork is public domain. See the Wikimedia Commons source
-page for the image provenance and public-domain notice.
+The original card artwork is public domain.
