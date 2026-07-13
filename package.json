@@ -1,0 +1,34 @@
+{
+  "name": "lenormand-json",
+  "version": "1.0.0",
+  "description": "A JSON dataset of the 36 Lenormand cards with public-domain card images.",
+  "main": "lenormand.json",
+  "files": [
+    "lenormand.json",
+    "lenormand-images.json",
+    "lenormand-card",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "validate": "node -e \"JSON.parse(require('fs').readFileSync('lenormand.json','utf8')); JSON.parse(require('fs').readFileSync('lenormand-images.json','utf8')); console.log('JSON files are valid')\""
+  },
+  "keywords": [
+    "lenormand",
+    "oracle",
+    "cards",
+    "json",
+    "dataset",
+    "divination"
+  ],
+  "author": "Kevin Guo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/KevinGuo1007/lenormand-json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KevinGuo1007/lenormand-json/issues"
+  },
+  "homepage": "https://github.com/KevinGuo1007/lenormand-json#readme"
+}
