@@ -3,13 +3,15 @@
 
 A JSON dataset for the 36 Lenormand cards, including public-domain card images.
 
-<center>
+
+<div align="center">
 
 [English](README.md) | [简体中文](README.zh.md)
 
 [![GitHub release](https://img.shields.io/github/v/release/KevinGuo1007/lenormand-json?include_prereleases&sort=semver)](https://github.com/KevinGuo1007/lenormand-json/releases)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-</center>
+
+</div>
 
 ## The cards
 
